@@ -2,10 +2,35 @@ let playerHealth = 100;
 let computerHealth = 100;
 
 function updateHealth() {
-    document.getElementById("playerHealth").textContent = playerHealth;
-    document.getElementById("computerHealth").textContent = computerHealth;
+    
+.health-bar {
+    width: 100%;
+    height: 20px;
+    background: #555;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 
+.health-fill {
+    height: 100%;
+    width: 100%;
+    background: limegreen;
+    transition: width 0.4s ease-in-out;
+}
+
+/* Screen shake animation */
+@keyframes shake {
+    0% { transform: translate(0px, 0px); }
+    25% { transform: translate(5px, 0px); }
+    50% { transform: translate(-5px, 0px); }
+    75% { transform: translate(5px, 0px); }
+    100% { transform: translate(0px, 0px); }
+}
+
+.shake {
+    animation: shake 0.3s;
+}
 function attack() {
     let damage = Math.floor(Math.random() * 11) + 5;
     computerHealth -= damage;
