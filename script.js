@@ -2,8 +2,7 @@ let playerHealth = 100;
 let computerHealth = 100;
 
 function updateHealth() {
-    
-.health-bar {
+ .health-bar {
     width: 100%;
     height: 20px;
     background: #555;
@@ -30,6 +29,7 @@ function updateHealth() {
 
 .shake {
     animation: shake 0.3s;
+}   
 }
 function attack() {
     let damage = Math.floor(Math.random() * 11) + 5;
