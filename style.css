@@ -10,20 +10,42 @@ h1 {
     font-size: 32px;
 }
 
+/* Health Section Layout */
 .health-container {
     display: flex;
     justify-content: space-around;
-    margin: 40px;
+    margin: 40px 0;
     font-size: 24px;
 }
 
-.player-box, .computer-box {
+/* ONLY style the outer boxes */
+.player-box, 
+.computer-box {
     background: #333;
     padding: 20px;
     border-radius: 10px;
-    width: 120px;
+    width: 140px;
 }
 
+/* Health Bar Background */
+.health-bar {
+    width: 100%;
+    height: 20px;
+    background: #555;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+/* Green Health Fill */
+.health-fill {
+    height: 100%;
+    width: 100%;
+    background: limegreen;
+    transition: width 0.4s ease-in-out;
+}
+
+/* Buttons */
 .buttons button {
     padding: 10px 20px;
     margin: 10px;
@@ -38,26 +60,13 @@ button:hover {
     transform: scale(1.1);
 }
 
+/* Result Text */
 #result {
     margin-top: 20px;
     font-size: 20px;
-}.health-bar {
-    width: 100%;
-    height: 20px;
-    background: #555;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 10px;
 }
 
-.health-fill {
-    height: 100%;
-    width: 100%;
-    background: limegreen;
-    transition: width 0.4s ease-in-out;
-}
-
-/* Screen shake animation */
+/* Screen Shake Animation */
 @keyframes shake {
     0% { transform: translate(0px, 0px); }
     25% { transform: translate(5px, 0px); }
