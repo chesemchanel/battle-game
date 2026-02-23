@@ -8,17 +8,23 @@
 
     <h1>⚔️ Battle Game ⚔️</h1>
 
-    <div class="health-container">
-        <div>
-            <h2>You ❤️</h2>
-            <p id="playerHealth">100</p>
+    div class="health-container">
+    <div class="player-box">
+        <h2>You ❤️</h2>
+        <div class="health-bar">
+            <div id="playerBar" class="health-fill"></div>
         </div>
-
-        <div>
-            <h2>Computer 🤖</h2>
-            <p id="computerHealth">100</p>
-        </div>
+        <p id="playerHealth">100</p>
     </div>
+
+    <div class="computer-box">
+        <h2>Computer 🤖</h2>
+        <div class="health-bar">
+            <div id="computerBar" class="health-fill"></div>
+        </div>
+        <p id="computerHealth">100</p>
+    </div>
+</div>
 
     <div class="buttons">
         <button onclick="attack()">⚔ Attack</button>
