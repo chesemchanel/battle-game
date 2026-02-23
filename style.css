@@ -17,7 +17,7 @@ h1 {
     font-size: 24px;
 }
 
-.health-container div {
+.player-box, .computer-box {
     background: #333;
     padding: 20px;
     border-radius: 10px;
