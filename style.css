@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(to right, #1e1e2f, #2b2b45);
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+.health-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+    font-size: 24px;
+}
+
+.health-container div {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 120px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+}
