@@ -1,0 +1,34 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Battle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>⚔️ Battle Game ⚔️</h1>
+
+    <div class="health-container">
+        <div>
+            <h2>You ❤️</h2>
+            <p id="playerHealth">100</p>
+        </div>
+
+        <div>
+            <h2>Computer 🤖</h2>
+            <p id="computerHealth">100</p>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="attack()">⚔ Attack</button>
+        <button onclick="specialAttack()">💥 Special</button>
+        <button onclick="defend()">🛡 Defend</button>
+        <button onclick="restartGame()">🔄 Restart</button>
+    </div>
+
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
