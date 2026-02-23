@@ -37,7 +37,9 @@ function attack() {
 
     let computerDamage = Math.floor(Math.random() * 11) + 5;
     playerHealth -= computerDamage;
-
+document.body.classList.add("shake");
+setTimeout(() => document.body.classList.remove("shake"), 300);
+Do the SAME inside:
     document.getElementById("result").textContent =
         `You attacked for ${damage}! Computer attacked for ${computerDamage}!`;
 
@@ -62,7 +64,9 @@ function specialAttack() {
 function defend() {
     let computerDamage = Math.floor(Math.random() * 6) + 2;
     playerHealth -= computerDamage;
-
+document.body.classList.add("shake");
+setTimeout(() => document.body.classList.remove("shake"), 300);
+Do the SAME inside:
     document.getElementById("result").textContent =
         `You defended! Computer did only ${computerDamage} damage.`;
 
