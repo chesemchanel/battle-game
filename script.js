@@ -1,4 +1,3 @@
-
 let playerHealth = 100;
 let computerHealth = 100;
 
